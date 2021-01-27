@@ -1,0 +1,9 @@
+@import "../ScssMixin/mixin.scss";
+
+.container{
+  @include flex
+}
+.dark{
+    background:black;
+    color: white;
+}

@@ -19,7 +19,7 @@ function Header() {
                           <div><span className="Home">Home</span></div>
                           <div><span className="services">Services</span></div>
                           <div><span className="about">About us</span></div>
-                          <div><span className="Sign">Sign Up</span></div>
+                          <div><span className="log_out">Log Out</span></div>
                           
                    
                   </div>
@@ -30,11 +30,17 @@ function Header() {
                   </div>
                </div>
                <div className="best_offer">Best offer</div>
-               <div class="superburger">SUPER BURGER</div>
-               <div class="Deal">DEAL</div>
+               <div className="superburger">SUPER BURGER</div>
+               <div className="Deal">DEAL</div>
                <Button className={classes.Button}>
                    Order now
                </Button>
+               <div className="red_circle">
+                    <div class="red_circle_content">
+                        only <br/>
+                        $44.99
+                    </div>
+                </div>
            </div>
         </div>
     )

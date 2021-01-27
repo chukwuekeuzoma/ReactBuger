@@ -1,0 +1,25 @@
+@import "../ScssMixin/mixin.scss";
+
+.display_flex{
+   @include flex;
+}
+
+.Natural{
+    @include logo_two
+}
+.margin_left_100{
+    margin-left:100px;
+}
+.fresh{
+    font-size:40px;
+    font-weight:bold;
+    line-height:40px;
+}
+.p_tag{
+    padding-left:18px;
+    font-weight:bold;
+    line-height: 30px;
+}
+.margin_top{
+    margin-top:100px;
+}

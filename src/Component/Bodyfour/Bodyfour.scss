@@ -1,0 +1,20 @@
+@import "../ScssMixin/mixin.scss";
+
+.follow_con{
+    text-align: center;
+    position: relative;
+    padding-top:90px;
+    font-weight: bolder;
+}
+.follow{
+  @include logo_three
+}
+.pic_collection{
+    display:grid;
+    grid-template-columns:33.3% 33.3% 33.3%;
+    grid-auto-rows:minmax(100px,auto);
+    gap: 10px;
+    margin:100px;
+    margin-top:20px;
+    box-sizing: border-box;
+}

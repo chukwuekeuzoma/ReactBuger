@@ -1,0 +1,25 @@
+@import "../ScssMixin/mixin.scss";
+
+
+.Menu{
+    position: relative;
+    padding-top:100px;
+    font-weight: bolder;
+    text-align: center;
+}
+.Menu_two{
+    @include logo_three
+}
+.buger_collection{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+    text-align: center;
+    margin:20px;
+    flex:1;
+    box-sizing: border-box;
+}
+.price{ 
+    color:red;
+    font-weight: bold;
+}

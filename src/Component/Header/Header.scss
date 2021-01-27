@@ -1,4 +1,4 @@
-@import "mixin";
+@import "../ScssMixin/mixin.scss";
 
 $ColourWhite:rgb(255, 255, 255);
 
@@ -9,7 +9,6 @@ $ColourWhite:rgb(255, 255, 255);
     background-repeat:no-repeat;
     background-size:cover;
     background-position:center center;
-    background-attachment: fixed;
     box-sizing: border-box;
 
     .main_nav{
@@ -28,29 +27,31 @@ $ColourWhite:rgb(255, 255, 255);
     .nav{
         color:$ColourWhite;
         @include flex;
-        margin-top:20px;
+        margin-left:30px;
     
         
         
-        .Home,.services,.about,.Sign{
+        .Home,.services,.about,.log_out{
             margin-right:30px;
+            @include flex;
+            justify-content: center !important;
+            align-content: center !important;
+            margin-top:20px;
             padding:5px;
             @include trans05s;
             cursor: pointer;
-            
+            border:1px solid $ColourWhite;
+            border-radius:5px;
+            font-weight: bolder;
             &:hover{
-                border-radius:5px;
-                // background:$ColourWhite; 
-                // color:black;
-                font-size:20px;
-                border:1px solid $ColourWhite;
-                opacity: 0.5;
+                @include h_p;
             }
         }
     }  
     .social_one{
         @include flex;
         margin-top:20px;
+        margin-right:20px;
     }  
     .twitter_one,.facebook_one,.instagram_one{
         border-radius:15px;
@@ -58,41 +59,15 @@ $ColourWhite:rgb(255, 255, 255);
         margin-right:10px;
         padding:10px;
         @include trans05s;
+        cursor: pointer;
     }
-    .twitter_one{
+    .twitter_one,.facebook_one,.instagram_one{
         &:hover{
-            background-image:url(../Images/twitterOne.png); 
             @include h_p;
         }
     }
-    .facebook_one{
-        &:hover{
-            background-image: url(../Images/facebookOne.png);
-           @include h_p;
-        }
-    }
-    .instagram_one{
-        &:hover{
-        background-image: url(../Images/logo.png);
-        @include h_p;
-     
-        }
-    }
     .best_offer{
-        margin-left:150px;
-        margin-top:50px;
-        display: flex;
-        align-items: center;
-        justify-content:left;
-        background-image:url(../Images/title.png);
-        background-position:left;
-        background-repeat: no-repeat;
-        height:60px;
-        padding-top:15px;
-        padding-left:45px;
-        color:white;
-        font-weight:bold;
-        font-size:20px;
+        @include logo;
     }
     .superburger{
         color:white;
@@ -106,5 +81,36 @@ $ColourWhite:rgb(255, 255, 255);
         font-weight: bolder;
         font-size:60px;
         margin-left:100px;
+    }
+    .red_circle{
+        @include flex;
+        justify-content: flex-end ;
+        position: absolute;
+        top:-400px;
+        right:300px;
+    }
+    .red_circle_content{
+        background-color:red;
+        border-radius:30% ;
+        padding:15px;
+        font-size:20px;
+        font-weight: bolder;
+        color:yellow;
+        width:60px;
+        height:60px;
+        animation: drop 1s 1s ease forwards,
+                   swign 2s 2s ease forwards;
+        transform-origin:10px 10px;
+    }
+    @keyframes drop {
+        0%{opacity: 0;}
+        70%{transform:translateY(700px);}
+        100%{transform: translateY(650px); opacity:1;}
+    }
+    @keyframes swign{
+       0%{transform: translateY(650px) rotateZ(0deg)}
+       40%{transform: translateY(650px) rotateZ(90deg)}
+       70%{transform: translateY(650px) rotateZ(70deg)}
+       100%{transform: translateY(650px) rotateZ(75deg)}
     }
 }
