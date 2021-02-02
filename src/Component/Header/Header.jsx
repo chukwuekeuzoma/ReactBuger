@@ -36,7 +36,7 @@ function Header() {
                    Order now
                </Button>
                <div className="red_circle">
-                    <div class="red_circle_content">
+                    <div className="red_circle_content">
                         only <br/>
                         $44.99
                     </div>

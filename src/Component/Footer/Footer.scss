@@ -1,9 +1,53 @@
 @import "../ScssMixin/mixin.scss";
 
 .container{
-  @include flex
-}
-.dark{
-    background:black;
+  @include flex;
+  background:black;
+  justify-content: space-between;
+
+  .container_two{
+    @include flex;
+
+  }
+  .dark{
+      background:black;
+      color: white;
+  }
+  .text__placeholder{
+    color:white !important;
+  }
+  .input{
+    color: white !important;
+    border: 1px solid white !important;
+    height: 59px !important;
+  } 
+  .color_w{
     color: white;
+  }
+  .margin_left{
+     margin-left: 20px;
+  }
+  .margin_right{
+    margin:20px;
+  }
+  .padding{
+    padding:5px;
+    cursor: pointer;
+  }
+  .contact_us{
+    color: white;
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    margin-left:5px;
+  }
+}
+.martins{
+  @include flex;
+  justify-content: center;
+  // align-content: center;
+  background: black;
+  color: white;
+  font-weight: bold;
+  height: 23px;
 }

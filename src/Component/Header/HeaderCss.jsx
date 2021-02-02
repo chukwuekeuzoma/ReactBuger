@@ -18,7 +18,43 @@ const useStyles = makeStyles({
             background: 'red',
             transform: "scale(1.2, 1.2)"
         }
-    }
+    },
+    Button_two:{
+        background: 'red',
+        color: 'yellow',
+        padding: '10px',
+        marginTop: '50px',
+        width: '100px',
+        fontSize: '15px',
+        fontWeight: 'bolder',
+        border: 'none',
+        borderRadius: '5px',
+        textTransform: 'lowercase',
+        cursor: "pointer",
+        transition:"0.5s",
+        '&:hover': {
+            background: 'red',
+            transform: "scale(1.2, 1.2)"
+        }
+    },
+    Button_three:{
+        background: 'red',
+        color: 'yellow',
+        padding: '10px',
+        height:'59px',
+        width: '100px',
+        fontSize: '15px',
+        fontWeight: 'bolder',
+        border: 'none',
+        // borderRadius: '5px',
+        textTransform: 'lowercase',
+        cursor: "pointer",
+        transition:"0.5s",
+        '&:hover': {
+            background: 'red'
+        }
+    },
+    
 });
 
 export { useStyles };

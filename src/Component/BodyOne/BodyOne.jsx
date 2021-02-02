@@ -10,8 +10,8 @@ export default function BodyOne() {
     return (
         <div>
            <div className="display_flex">
-              <div className="margin_left_100">
-                 <img src={slicebuger} alt="images" height="100%"/>
+              <div>
+                 <img src={slicebuger} alt="images" height="80%"/>
               </div>
               <div className="p_tag margin_top">
                     <div className="Natural">
@@ -31,10 +31,11 @@ export default function BodyOne() {
                         <br/>
                         <li>This album is to create css rules based</li>
                     </ul>
-                    <Button className={classes.Button}>
-                       About us
-                   </Button>
-
+                    <div className="display_flex">
+                        <Button className={classes.Button_two}>
+                           About us
+                        </Button>
+                    </div>
               </div>
 
 

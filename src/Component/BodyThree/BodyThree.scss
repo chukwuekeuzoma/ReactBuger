@@ -14,12 +14,19 @@
     display:flex;
     flex-wrap:wrap;
     justify-content: space-between;
+    justify-content: center;
     text-align: center;
-    margin:20px;
+    margin:30px;
     flex:1;
     box-sizing: border-box;
-}
-.price{ 
-    color:red;
-    font-weight: bold;
+    
+    div{
+        margin:10px;
+    }
+    
+    .price{ 
+        color:red;
+        font-weight: bold;
+    }
+
 }
