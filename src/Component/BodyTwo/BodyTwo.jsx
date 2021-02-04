@@ -8,11 +8,10 @@ export default function BodyTwo() {
     return (
         <div>
            
-                <div className="grid_class">
+                <div className="grid_class grid_class_two">
                     <div> <img src={milkCup} alt="images" width="100%"/></div>
                     <div><img src={hotDog} alt="images" width="100%"/></div>
                     <div><img src={milkCup} alt="images" width="100%"/></div>
-              
                 </div>
         </div>
     )

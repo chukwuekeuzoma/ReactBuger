@@ -1,5 +1,24 @@
+@import "../ScssMixin/mixin.scss";
+
+
+
 .grid_class{
     display:grid;
     grid-template-columns:33.3% 33.3% 33.3%;
     grid-auto-columns: auto;
+
+    .grid_class_two{
+        display: none;
+    }
+}
+
+
+@include MQ(600px){
+    .grid_class{
+        display:none;
+    }
+    .grid_class_two{
+        display: flex;
+        flex-direction: column;
+     }
 }

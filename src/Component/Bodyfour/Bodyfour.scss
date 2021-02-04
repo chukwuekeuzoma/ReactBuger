@@ -17,4 +17,23 @@
     margin:100px;
     margin-top:20px;
     box-sizing: border-box;
+
+    .wizzy{
+      display: none;
+    }
+}
+
+@include MQ(600px){
+    .wizzy{
+      display:grid;
+      grid-template-columns:repeat(2,1fr);
+      grid-auto-rows:minmax(100px,auto);
+      gap: 10px;
+      margin:100px;
+      margin-top:20px;
+      box-sizing: border-box;
+    }
+    .pic_collection{
+      display: none;
+    }
 }

@@ -10,7 +10,7 @@ export default function BodyOne() {
     return (
         <div>
            <div className="display_flex">
-              <div>
+              <div className = "img">
                  <img src={slicebuger} alt="images" height="80%"/>
               </div>
               <div className="p_tag margin_top">
